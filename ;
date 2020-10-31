@@ -1,0 +1,18 @@
+import pyspark
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.appName('CCA175Exam').enableHiveSupport().getOrCreate()
+OUT="/user/shree624/problem1"
+IN="/public/nyse/NYSE*.*"
+inf="csv"
+outf="csv"
+
+SQL="select count(1) from mt"
+
+df=spark.read.format(inf).load(IN)
+
+df1= createorReplaceTempTable('mt')
+
+df2=spark.sql(SQL)
+
+df2.coalesce(1).mode("overwrite").format(outf).save(OUT)

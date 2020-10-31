@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.spark"
+		module="spark-submit-parent"
+		revision="1.0"
+		conf="default"
+		confs="default"
+		date="20201023162511"/>
+	<dependencies>
+		<module organisation="com.databricks" name="spark-avro_2.11">
+			<revision name="2.4.0" error="not found" downloaded="false" searched="false" conf="default(runtime)" position="-1">
+				<caller organisation="org.apache.spark" name="spark-submit-parent" conf="default" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

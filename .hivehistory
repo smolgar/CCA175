@@ -1,0 +1,36 @@
+show databases;
+use temp;
+show databases;
+use udemy;
+show databases;
+use AeQuoo7aen8jook7Much0Aib0aim0aix
+;
+use default;
+show tables;
+show databases;
+create database shree624;
+use CREATE EXTERNAL TABLE emp.employee_external (
+ id int,
+ name string,
+ age int,
+ gender string)
+ ROW FORMAT DELIMITED
+ FIELDS TERMINATED BY ','
+ LOCATION '/user/hive/data/employee_external';use 
+;
+use testing;
+use default;
+show tables;
+show tables
+;
+exit;
+use sree_retail_db
+;
+show tables;
+select * from avgcost;
+show databases;
+show tables sree_retail_db
+;
+show tables sree_retail_db;
+exit();
+exit;
